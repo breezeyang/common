@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:breeze="http://breeze.net/schema/user"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd 
+		
+		http://breeze.net/schema/user 
+		http://breeze.net/schema/user.xsd">
+	<breeze:user id="user" name="zhangsan" age="23432"></breeze:user>
+</beans> 
