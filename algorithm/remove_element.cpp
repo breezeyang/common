@@ -27,7 +27,7 @@ int remove_element2(std::vector<int>& nums, int target) {
     int size = nums.size();
     int slowidx = 0;
     for (int i=0; i<size; ++i) {
-        if (nums[i] == target) {
+        if (nums[i] != target) {
             nums[slowidx] = nums[i];
             ++slowidx;
         }
@@ -38,7 +38,7 @@ int remove_element2(std::vector<int>& nums, int target) {
 int main()
 {
     std::vector<int> nums = {1, 2, 2, 3};
-    int ret = remove_element2(nums, 2);
+    int ret = remove_element2(nums, 3);
     std::cout << ret << std::endl;
     return 0;
 }

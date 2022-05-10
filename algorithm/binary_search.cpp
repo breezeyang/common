@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int binary_search(std::vector<int> nums, int target) {
+int binary_search(std::vector<int>& nums, int target) {
     int left = 0;
     int right = nums.size();
     while (left < right) {
